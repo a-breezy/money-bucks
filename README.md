@@ -1,12 +1,18 @@
 # Money-Bucks E-Commerce Back End [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-As your company grows, it's often hard to recall your employees, their pay, department, managers and other important, individual information. But not with Track-Your-Employees!
+In this age of internet marketplace everyone and their mother wants their own E-Commerce platform. Presented here is Money Bucks, the learn, mean back-end to power your budding business's products, catagories, and tags!
   
 ## Description
 
-This is a mysql and inquirer program to let users navigate their company's database, track employees, and departmentes. Users can view deptartments, roles, and employees as well as search by manager and department. Users can also add new departments, roles, and employees as well as update current employee's roles and managers.
+Money Bucks uses Express.js and the Sequelize ORM to allow users to go through their catalogue of products, categories, and tags to organize their goods and give users a straight forward way to search for good!
 
-GitHub Repo: [Track-Your-Employees](https://github.com/a-breezy/Track-Your-Employees)
+Products have been organized by id, product name, price, stock, tag id (which references multiple tags), and category id (which references the category).
+
+Categories relate to products. Users can create whatever categories they theink best matches their products.
+
+Tags have been simply organized by tag name with will reference the product.
+
+GitHub Repo: [Money Bucks](https://github.com/a-breezy/money-bucks)
 
 ## Table of Contents
 
@@ -22,20 +28,29 @@ GitHub Repo: [Track-Your-Employees](https://github.com/a-breezy/Track-Your-Emplo
 
 Install all npm dependencies: type 'npm i'
 
-Run the package through the command line by typing: 'npm start'
+Make sure to create database in mysql, by starting mysql in the terminal with and typing:
+  'source db/schema.sql'
+
+There is are seed files (/seeds/seeds) which can be sourced using the following command:
+  'npm run seed'
+
+Start the server by typing:
+  'npm start'
+
+From here routes can be tested.
 
 ---
 ## Usage
 
-A Video of Track-Your-Employees can be found [here](https://drive.google.com/file/d/10aILiKAApKtuW4eS04hUTgKu8ruU4JTx/view)
+A Video of Money Bucks can be found [here](https://drive.google.com/file/d/10aILiKAApKtuW4eS04hUTgKu8ruU4JTx/view)
 
-![Usage 1](./usage/images/start.png "Starting the App")*Starting the App*
+![Usage 1](./readme-img/npmi.png "Installing Package")*Installing Package*
 
-![Usage 2](./usage/images/depts.png "View All Departments")*View All Departments*
+![Usage 2](./readme-img/seed.png "Seeding Database")*Seeding Database*
 
-![Usage 3](./usage/images/roles.png "View All Roles")*View All Roles*
+![Usage 3](./readme-img/server.png "Starting Server")*Starting Server*
 
-![Usage 4](./usage/images/employees.png "View All Employees")*View All Employees*
+![Usage 4](./readme-img/database.png "Creating Database Schema")*Creating Database Schema*
 
 ---
 ## License
